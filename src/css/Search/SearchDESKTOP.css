@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container_search {
+    width: 100vw;
+    height: auto !important;
+    background-color: #141414 !important;
+    overflow: hidden !important;
+}
+
+.header-container,
+.input-container .form-container input,
+.form-container {
+    height: 4.5rem;
+    background-image: linear-gradient(
+        to bottom,
+        #0b0b0b,
+        #0b0b0b,
+        #141414
+    )
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    left: 6.7vw;
+}
+
+.form-container {
+    width: 100%;
+}
+
+.input-container .form-container input {
+    font-family: Netflix Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    height: 2rem;
+    padding: 0 37px 3px 40px;
+    color: #dedede !important;
+}
+
+.icon-search,
+.style-cross,
+.cantidad-container,
+.subtitles-movies {
+    position: absolute;
+}
+
+.icon-search {
+    width: 23px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    left: 5px;
+}
+
+.icon-search i {
+    font-size: 18.5px;
+}
+
+.style-cross {
+    right: 0;
+}
+
+.style-cross i {
+    font-size: 21.5px;
+}
+
+.style-cross i,
+.notification-container .bell-container,
+.downArrow-container i {
+    color: #dedede;
+}
+
+.notification-container .bell-container {
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.cantidad-container {
+    width: 16px;
+    height: 16px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background-color: #be2014;
+    color: #fff;
+    font-size: 9px;
+    font-weight: 700;
+    margin-left: 0.5vw;
+}
+
+.notification-miyagi-downArrow_container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.downArrow-container {
+    position: relative;
+    right: 0.6vw;
+    bottom: 3px;
+}
+
+.movies-container {
+    width: 93%;
+    margin: auto;
+    padding-top: 5rem;
+}
+
+.movies-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.explore-titles_container {
+    color: #787878;
+    font-weight: 600;
+    position: relative;
+    left: 0.25vw;
+    margin-bottom: 1rem;
+}
+
+.subtitles-movies {
+    width: 51% !important;
+    height: 1.5rem !important;
+    line-height: 1.4rem;
+    left: 15.6vw;
+    overflow: hidden;
+}
+
+.subtitles-movies li {
+    color: #dedede;
+    font-size: 0.95rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.center-images {
+    justify-content: center;
+}
+
+.movies-container ul li {
+    margin-left: 5px;
+    margin-bottom: 62px;
+}
+
+.movies-container ul li:hover .title-description_movie {
+    display: flex;
+}
+
+.container-imagen-movie,
+.title-description_movie {
+    width: 232px;
+    height: 137px;
+}
+
+.container-imagen-movie img {
+    width: 100%;
+    height: 100%;
+}
+
+.title-description_movie {
+    color: #fff;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding-top: 1rem;
+    overflow: hidden;
+}
+
+.title-description_movie::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #080808;
+    opacity: .7 !important;
+}
+
+.container-imagen-movie img, 
+.title-description_movie::before {
+    border-radius: 0.25vw;
+}
+
+.titulo_movie, .descripcion_movie {
+    text-align: center;
+    position: relative;
+    line-height: normal;
+    white-space: wrap !important;
+}
+
+.titulo_movie {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.descripcion_movie {
+    font-size: 0.9rem;
+}
+
+@media only screen and (min-width: 1700px) and (max-width: 2560px) {
+    .input-container {
+        width: 17.7vw;
+        left: 7.5vw;
+    }
+
+    .notification-miyagi-downArrow_container {
+        width: 4vw !important;
+    }
+
+    .explore-titles_container {
+        top: 0 !important;
+        left: 0.8vw !important;
+    }
+
+    .subtitles-movies {
+        left: 11.5vw !important;
+        margin-top: 0.1rem !important;
+    }
+
+    .movies-container ul {
+        width: 99%;
+        left: 0.3vw;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1320px) {
+    .input-container {
+        width: 25vw;
+        left: 4.3vw;
+    }
+
+    .input-container .form-container input {
+        font-size: 14px;
+    }
+
+    .notification-miyagi-downArrow_container {
+        width: 7.3vw !important;
+        margin-right: 1.5vw;
+    }
+
+    .downArrow-container {
+        right: -0.1vw;
+    }
+
+    .subtitles-movies {
+        left: 21vw !important;
+        margin-top: 0.05rem !important;
+    }
+}
