@@ -1,7 +1,5 @@
 import React from "react";
 
-// import NavBarMOBILE from "../components/NavBarMOBILE";
-
 import logo from "../img/Netflix_logo.svg.png";
 
 const NavBar = () => {
@@ -33,10 +31,6 @@ const NavBar = () => {
           </li>
         </ul>
       </nav>
-
-      {/* <section className="NavBarMOBILE-container" style={{ display: "none" }}>
-        <NavBarMOBILE />
-      </section> */}
     </div>
   );
 };
